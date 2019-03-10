@@ -1,6 +1,7 @@
 package ruBeru;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -9,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SupportSettings extends HighlighterClass{
 
-    public FirefoxDriver driver;
+    public ChromeDriver driver;
 
     public void open() {
 
@@ -43,15 +44,15 @@ public class SupportSettings extends HighlighterClass{
     public void logout(){
 
         driver.findElement(By.className("header2-nav-item__text")).click();
-        driver.findElement(By.xpath("/html/body/div[7]/div[2]/div/ul[4]/li[2]")).click();
+        driver.findElement(By.xpath("//a[text() = 'Выход']")).click();
 
     }
 
     @BeforeMethod
     public void setUp() {
 
-        System.setProperty("webdriver.gecko.driver","/Users/ilichevmikhail/Projects/geckodriver");
-        driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/ilyichev/IdeaProjects/webdrivertngs/chromedriver");
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
