@@ -43,7 +43,9 @@ public class SupportSettings extends HighlighterClass{
 
     public void logout(){
 
+        highlighterMethod(driver,driver.findElement(By.className("header2-nav-item__text")));
         driver.findElement(By.className("header2-nav-item__text")).click();
+        highlighterMethod(driver,driver.findElement(By.xpath("//a[text() = 'Выход']")));
         driver.findElement(By.xpath("//a[text() = 'Выход']")).click();
 
     }
@@ -59,10 +61,10 @@ public class SupportSettings extends HighlighterClass{
     }
 
 
-//    @AfterMethod
-//    public void close() {
-//
-//        driver.quit();
+    @AfterMethod
+    public void close() {
 
-//    }
+        driver.quit();
+
+    }
 }

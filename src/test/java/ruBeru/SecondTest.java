@@ -11,23 +11,26 @@ import org.testng.annotations.Test;
 
 public class SecondTest extends SupportSettings {
 
-    //@Parameters({"city-name"})
+    @Parameters("cityName")
     @Test
-    public void secondTest() {
+    public void secondTest(String cityName) {
 
         //Открытие сайта
         open();
 
-        //Смена города на "Хвалынск"
+        //Смена города на "city-name"
 
         driver.findElement(By.xpath("//div[contains(@class, 'unique-selling-proposition-line__region')]" +
                         "//span[contains(@class, 'link__inner')]")).click();
         driver.findElement(By.xpath("(//form[contains(@class,'region-select-form')]//input)[1]"))
-                .sendKeys("Хвалынск", Keys.ENTER);
+                .sendKeys(cityName, Keys.ENTER);
         driver.findElement(By.xpath("//form[contains(@class, 'region-select-form')]" +
                 "//div[contains(@class, 'region-suggest__list-item')]")).click();
         driver.findElement(By.xpath("//form[contains(@class, 'region-select-form')]//button")).click();
-        Assert.assertTrue(driver.findElements(By.xpath("//span[text() = 'Хвалынск']")).size() > 0);
+        driver.navigate().refresh();
+        WebElement city = driver.findElement(By.cssSelector(".link__inner"));
+        System.out.println(city.getAttribute("textContent"));
+        Assert.assertTrue(city.getAttribute("textContent").equals(cityName));
 
         //Авторизация
         login();
