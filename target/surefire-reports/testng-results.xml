@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="79006" started-at="2019-05-09T19:50:20Z" finished-at="2019-05-09T19:51:39Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="79006" started-at="2019-05-09T19:50:20Z" finished-at="2019-05-09T19:51:39Z">
+      <class name="ruBeru.FirstTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ruBeru.FirstTest@65e61854]" name="setUp" is-config="true" duration-ms="5866" started-at="2019-05-09T19:50:20Z" finished-at="2019-05-09T19:50:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:ruBeru.FirstTest@65e61854]" name="firstTest" duration-ms="7633" started-at="2019-05-09T19:50:26Z" finished-at="2019-05-09T19:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ruBeru.FirstTest@65e61854]" name="close" is-config="true" duration-ms="3953" started-at="2019-05-09T19:50:34Z" finished-at="2019-05-09T19:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ruBeru.FirstTest -->
+      <class name="ruBeru.SecondTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ruBeru.SecondTest@1568159]" name="setUp" is-config="true" duration-ms="4023" started-at="2019-05-09T19:50:38Z" finished-at="2019-05-09T19:50:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="secondTest(java.lang.String)[pri:0, instance:ruBeru.SecondTest@1568159]" name="secondTest" duration-ms="13989" started-at="2019-05-09T19:50:42Z" data-provider="ChangeCity" finished-at="2019-05-09T19:50:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Балаково]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ruBeru.SecondTest@1568159]" name="close" is-config="true" duration-ms="2287" started-at="2019-05-09T19:50:56Z" finished-at="2019-05-09T19:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ruBeru.SecondTest@1568159]" name="setUp" is-config="true" duration-ms="4545" started-at="2019-05-09T19:50:58Z" finished-at="2019-05-09T19:51:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="secondTest(java.lang.String)[pri:0, instance:ruBeru.SecondTest@1568159]" name="secondTest" duration-ms="17272" started-at="2019-05-09T19:51:03Z" data-provider="ChangeCity" finished-at="2019-05-09T19:51:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Хвалынск]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ruBeru.SecondTest@1568159]" name="close" is-config="true" duration-ms="2891" started-at="2019-05-09T19:51:20Z" finished-at="2019-05-09T19:51:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ruBeru.SecondTest -->
+      <class name="ruBeru.ThirdTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ruBeru.ThirdTest@4fcee388]" name="setUp" is-config="true" duration-ms="4265" started-at="2019-05-09T19:51:23Z" finished-at="2019-05-09T19:51:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="thirdTest()[pri:0, instance:ruBeru.ThirdTest@4fcee388]" name="thirdTest" duration-ms="11852" started-at="2019-05-09T19:51:27Z" finished-at="2019-05-09T19:51:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ruBeru.ThirdTest@4fcee388]" name="close" is-config="true" duration-ms="141" started-at="2019-05-09T19:51:39Z" finished-at="2019-05-09T19:51:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ruBeru.ThirdTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
