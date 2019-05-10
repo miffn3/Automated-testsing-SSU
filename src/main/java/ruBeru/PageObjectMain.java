@@ -24,7 +24,6 @@ public class PageObjectMain {
         driver = webDriver;
     }
 
-
     @Step("Click login button")
     public void clickButtonLogin() {
         logInButton = driver.findElement(By.className("header2-nav-item__text"));

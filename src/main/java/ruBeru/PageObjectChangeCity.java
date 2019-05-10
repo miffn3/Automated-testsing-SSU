@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class PageObjectChangeCity {
-
     private WebDriver driver;
     private WebElement fieldNameCity;
     private WebElement suggestedCity;

@@ -1,6 +1,5 @@
 package ruBeru;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +14,6 @@ public class SupportSettings {
 
     @BeforeMethod
     public void setUp() {
-
         System.setProperty("webdriver.chrome.driver", "/Users/ilyichev/IdeaProjects/webdrivertngs/chromedriver");
         driver = new EventFiringWebDriver(new ChromeDriver());
         driver.manage().window().maximize();
@@ -26,7 +24,6 @@ public class SupportSettings {
 
     }
 
-
     @AfterMethod
     public void close() {
         PageObjectMain pageObjectMain = new PageObjectMain(driver);
@@ -35,14 +32,11 @@ public class SupportSettings {
             pageObjectMain.clickButtonLogOut();
         }
         driver.quit();
-
     }
 
     @DataProvider(name = "ChangeCity")
     public static Object[][] citiesNames() {
-
         Object[][] returnArray = {new Object[] {"Балаково"}, new Object[] {"Хвалынск"}};
         return returnArray;
     }
-
 }
