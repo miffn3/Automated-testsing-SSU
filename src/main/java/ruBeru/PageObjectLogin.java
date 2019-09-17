@@ -19,8 +19,8 @@ public class PageObjectLogin {
 
     @Step("Enter login")
     public void enterLogin() {
-        fieldLogin = driver.findElement(By.name("login"));
-        fieldLogin.sendKeys("miffn1@yandex.ru");
+        fieldLogin = driver.findElement(By.name(""));
+        fieldLogin.sendKeys("");
     }
 
     @Step("Click enter login button")
